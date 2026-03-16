@@ -24,7 +24,7 @@
             height: auto;
         }
 
-        /* 大標題，HSIANG KUN KO */
+  
         h1 {
             position: absolute;
             top: 10%;
@@ -35,7 +35,7 @@
             letter-spacing: -1px;
         }
         
-        /* 小標題, CSIE */
+
         .subtitle {
             position: absolute;
             bottom: 82%;
@@ -45,7 +45,7 @@
             color: #666;
         }
 
-        /* Experience 和他的底線 */
+
         .section-label-Experience {
             position: absolute;
             top: 20%;
@@ -56,7 +56,7 @@
             width: 100px;
         }       
 
-        /* Skills */
+
         .section-label-Projects {
             position: absolute;
             top: 45%;
@@ -78,7 +78,7 @@
             white-space: nowrap;
         }
 
-        /* 所有 ul 的共同制服 */
+
         ul {
             position: absolute;
             left: 10%;
@@ -88,7 +88,7 @@
             color: #000;
         }
 
-        /* 依照類別決定垂直位置 */
+
         .experience-list {
             top: calc(20% + 30px);
         }
@@ -105,7 +105,7 @@
             font-size: 0.9rem;
             margin-bottom: 20px;
             line-height: 1.2;
-            transition: all 0.3s; /* (Requirement: hover) */
+            transition: all 0.3s; 
         }
 
         li:hover {
@@ -113,37 +113,35 @@
             transform: scale(1.05);
         }
 
-        /* 調整圖示群組的位置與排列 */
+
         .link-group {
             position: absolute;
-            top: 12%;     /* 調整數值讓它與標題 HSIANG KUN KO 對齊 */
-            left: 42%;    /* 調整數值控制水平位置 */
+            top: 12%;    
+            left: 42%;    
             display: flex;
-            gap: 20px;    /* 圖示之間的間距 */
+            gap: 20px;    
         }
 
-        /* 調整圖示本身的大小與顏色 */
+ 
         .link-group a {
-            color: #000;         /* 圖示顏色 */
-            font-size: 1.4rem;   /* 調整圖示大小，你可以根據喜好縮放 */
-            text-decoration: none; /* 移除可能存在的連結底線 */
-            transition: all 0.3s ease; /* 讓 hover 效果更平滑 */
+            color: #000;        
+            font-size: 1.4rem;   
+            text-decoration: none; 
+            transition: all 0.3s ease; 
         }
 
-        /* 增加互動感 (Requirement: hover) */
         .link-group a:hover {
-            color: #d22d2d;      /* 移上去變成紐約時報紅 */
-            transform: translateY(-2px); /* 輕微往上浮動 */
+            color: #d22d2d;      
+            transform: translateY(-2px); 
         }
 
-        /* 6. 右下角裝飾文字 */
         .meta-info {
             position: absolute;
             bottom: 5%;
             right: 5%;
             font-size: 10px;
             font-family: monospace;
-            writing-mode: vertical-rl; /* 日本設計常用的直書裝飾 */
+            writing-mode: vertical-rl; 
             color: #ccc;
         }
     </style>
