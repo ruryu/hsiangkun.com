@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>HSIANG KUN</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+            background-color: #fff;
+            color: #000;
+            font-family: -apple-system, "Helvetica", "Noto Serif TC", serif;
+        }
+
+        .random-img {
+            position: absolute;
+            top: 10%;
+            right: 10%;
+            width: 200px;
+            height: auto;
+        }
+
+        /* 大標題，HSIANG KUN KO */
+        h1 {
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            font-size: 3rem;
+            margin: 0;
+            line-height: 1;
+            letter-spacing: -1px;
+        }
+        
+        /* 小標題, CSIE */
+        .subtitle {
+            position: absolute;
+            bottom: 82%;
+            left: 10%;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            color: #666;
+        }
+
+        /* Experience 和他的底線 */
+        .section-label-Experience {
+            position: absolute;
+            top: 20%;
+            left: 10%;
+            font-size: 0.7rem;
+            font-weight: bold;
+            border-bottom: 2px solid #000;
+            width: 100px;
+        }       
+
+        /* Skills */
+        .section-label-Projects {
+            position: absolute;
+            top: 45%;
+            left: 10%;
+            font-size: 0.7rem;
+            font-weight: bold;
+            border-bottom: 2px solid #000;
+            width: 100px;
+        }
+
+        .section-label-More {
+            position: absolute;
+            top: 65%;
+            left: 10%;
+            font-size: 0.7rem;
+            font-weight: bold;
+            border-bottom: 2px solid #000;
+            width: 100px;
+            white-space: nowrap;
+        }
+
+        /* 所有 ul 的共同制服 */
+        ul {
+            position: absolute;
+            left: 10%;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            color: #000;
+        }
+
+        /* 依照類別決定垂直位置 */
+        .experience-list {
+            top: calc(20% + 30px);
+        }
+
+        .projects-list {
+            top: calc(45% + 30px);
+        }
+
+        .More-list {
+            top: calc(65% + 30px); 
+        }
+        
+        li {
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            transition: all 0.3s; /* (Requirement: hover) */
+        }
+
+        li:hover {
+            color: #d22d2d;
+            transform: scale(1.05);
+        }
+
+        /* 調整圖示群組的位置與排列 */
+        .link-group {
+            position: absolute;
+            top: 12%;     /* 調整數值讓它與標題 HSIANG KUN KO 對齊 */
+            left: 42%;    /* 調整數值控制水平位置 */
+            display: flex;
+            gap: 20px;    /* 圖示之間的間距 */
+        }
+
+        /* 調整圖示本身的大小與顏色 */
+        .link-group a {
+            color: #000;         /* 圖示顏色 */
+            font-size: 1.4rem;   /* 調整圖示大小，你可以根據喜好縮放 */
+            text-decoration: none; /* 移除可能存在的連結底線 */
+            transition: all 0.3s ease; /* 讓 hover 效果更平滑 */
+        }
+
+        /* 增加互動感 (Requirement: hover) */
+        .link-group a:hover {
+            color: #d22d2d;      /* 移上去變成紐約時報紅 */
+            transform: translateY(-2px); /* 輕微往上浮動 */
+        }
+
+        /* 6. 右下角裝飾文字 */
+        .meta-info {
+            position: absolute;
+            bottom: 5%;
+            right: 5%;
+            font-size: 10px;
+            font-family: monospace;
+            writing-mode: vertical-rl; /* 日本設計常用的直書裝飾 */
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="me.jpg" alt="KO" class="random-img">
+
+    <h1>HSIANG KUN KO</h1>
+    <div class="subtitle"> NCU CSIE</div>
+
+    <div class="link-group">
+        <a href="mailto:hsiangkunko@gmail.com" title="Email">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+        
+        <a href="https://github.com/ruryu" target="_blank" title="GitHub">
+            <i class="fa-brands fa-github"></i>
+        </a>
+        
+        <a href="https://linkedin.com/in/sean-ko123" target="_blank" title="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+    </div>
+
+    <div class="section-label-Experience">Experience</div>
+
+    <ul class="experience-list">
+        <li><strong>GDG on Campus</strong><br>Technical Core Team </li>
+        <li><strong>Network Administrator</strong><br>NCU Service-Learning Development Center </li>
+        <li><strong>Teaching Assistant</strong><br>Open Source Software Development </li>
+    </ul>
+
+    <div class="section-label-Projects">Projects</div>
+
+    <ul class="projects-list">
+        <li><Strong>QuantDashboard AI</Strong><br>Full-stack quantitative platform for the Taiwan stock market.</li>
+        <li>
+            <strong>Street Program</strong><br>
+            Designed and implemented an end-to-end pipeline that crawls Google Street View image,<br>
+            using BFS and VLM models for structural analysis.
+        </li>
+    </ul>
+
+    <div class="section-label-More">More</div>
+
+    <ul class="More-list">
+        <li><Strong>NCU Dogs Club</Strong><br>Vice President</li>
+        <li><Strong>English Workshop</Strong><br>Speaker and Session Facilitator</li>
+        <li><Strong>MSI SWE Intern</Strong><br>Upcoming !!!</li>
+    </ul>
+
+</body>
+</html>
